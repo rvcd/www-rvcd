@@ -1,21 +1,15 @@
 ---
-// Component Imports
-import Button from '../components/Button.astro';
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
 
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<BaseLayout title="Home">
+  <div class="stack h-80 w-full min-w-full">
+    <img class="object-cover object-right-top h-full w-full" src="/assets/images/20210626.adefua-day-of-action.dancers.02.jpg"/>
+    <div class="bg-gray-800 h-full w-full bg-opacity-70"></div>
+    <div class="h-full flex justify-around items-center">
+      <img class="rounded-full max-h-80 mx-20 my-10 opacity-90 hidden lg:block" src="/assets/images/rvcd-logo.png" />
+      <h2 class="text-white text-4xl w-2/3 lg:w-1/2 ml-auto mr-auto lg:mr-20 lg:ml-0 my-20 leading-relaxed tracking-widest opacity-90 text-center lg:text-right">Unifying Communities of Rainier Valley through Arts and Culture</h2>
+    </div>
+  </div>
+</BaseLayout>
 
-    <title>Astro + TailwindCSS</title>
-    <link rel="stylesheet" type="text/css" href={Astro.resolve("../styles/global.css")}>
-  </head>
-
-  <body>
-    <Button>I’m a Tailwind Button!</Button>
-  </body>
-</html>

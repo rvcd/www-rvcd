@@ -1,0 +1,35 @@
+---
+// Component Imports
+import Header from '../components/Header.astro';
+
+const {title} = Astro.props;
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+      <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    	<title>{title} | RVCD</title>
+    <link rel="stylesheet" type="text/css" href={Astro.resolve("../styles/global.css")}>
+  </head>
+
+  <body class="antialiased overflow-hidden">
+		<header>
+			<Header/>
+		</header>
+		<main>
+			<slot/>
+		</main>
+		<footer>
+		</footer>
+  </body>
+</html>
+
+<style>
+	body {
+		display: grid;
+		grid-template-rows: 1fr auto 1fr;
+	}
+</style>

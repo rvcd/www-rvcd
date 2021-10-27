@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Glacial Indifference";
+  src: url("/assets/fonts/GlacialIndifference-Regular.otf");
+}
+@font-face {
+  font-family: "Glacial Indifference";
+  src: url("/assets/fonts/GlacialIndifference-Bold.otf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Prata";
+  src: url("/assets/fonts/Prata-Regular.ttf");
+}
+
+body,
+div,
+p {
+  font-family: "Glacial Indifference", "Courier New", Courier, monospace;
+}
+
+h1 {
+  font-family: "Prata", "Courier New", Courier, monospace;
+}
+
+h2 {
+  font-family: "Glacial Indifference", sans-serif;
+  font-weight: bold;
+}
+
+.container {
+  width: min(100ch, 100vw - 2rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.stack {
+  display: grid;
+  width: fit-content;
+}
+.stack > * {
+  grid-area: 1 / -1;
+}
