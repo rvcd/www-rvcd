@@ -3,13 +3,25 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout title="Home">
-  <div class="stack h-80 w-full min-w-full">
-    <img class="object-cover object-right-top h-full w-full" src="/assets/images/20210626.adefua-day-of-action.dancers.02.jpg"/>
-    <div class="bg-gray-800 h-full w-full bg-opacity-70"></div>
-    <div class="h-full flex justify-around items-center">
-      <img class="rounded-full max-h-80 mx-20 my-10 opacity-90 hidden lg:block" src="/assets/images/rvcd-logo.png" />
-      <h2 class="text-white text-4xl w-2/3 lg:w-1/2 ml-auto mr-auto lg:mr-20 lg:ml-0 my-20 leading-relaxed tracking-widest opacity-90 text-center lg:text-right">Unifying Communities of Rainier Valley through Arts and Culture</h2>
+  <div class="stack h-96 w-full min-w-full">
+    <img class="object-cover object-right-top h-96 w-full" src="/assets/images/20210626.adefua-day-of-action.dancers.02.jpg"/>
+    <div class="bg-gray-900 h-96 w-full bg-opacity-50"></div>
+    <div class="h-full flex justify-around items-top">
+      <img class="rounded-full h-96 mx-20 relative top-16 hidden lg:block z-10 border-8 border-mustard" src="/assets/images/rvcd-logo.png" />
+      <h1 class="text-white text-3xl sm:text-4xl xl:text-5xl font-black w-4/5 lg:w-full ml-auto mr-auto lg:mr-20 lg:ml-0 mt-20 lg:mt-5 xl:mt-10 leading-relaxed sm:leading-relaxed xl:leading-relaxed tracking-widest opacity-90 text-center lg:text-right">
+        Unifying <span class="font-secondary underline">Communities</span> of Rainier Valley through 
+        <span class="font-secondary underline">Arts</span> and <span class="font-secondary underline">Culture</span></h1>
     </div>
   </div>
+
+  <div class="wave-clip bg-mustard h-48">
+  </div>
+
 </BaseLayout>
+
+<style>
+  .wave-clip {
+     clip-path: polygon(100% 0%, 0% 0% , 0% 65%, 1% 64.95%, 2% 64.8%, 3% 64.6%, 4% 64.3%, 5% 63.9%, 6% 63.45%, 7% 62.9%, 8% 62.25%, 9% 61.55%, 10% 60.8%, 11% 59.95%, 12% 59.05%, 13% 58.1%, 14% 57.1%, 15% 56.05%, 16% 55%, 17% 53.9%, 18% 52.8%, 19% 51.65%, 20% 50.5%, 21% 49.35%, 22% 48.2%, 23% 47.05%, 24% 45.9%, 25% 44.8%, 26% 43.75%, 27% 42.75%, 28% 41.75%, 29% 40.8%, 30% 39.9%, 31% 39.1%, 32% 38.35%, 33% 37.65%, 34% 37.05%, 35% 36.5%, 36% 36.05%, 37% 35.65%, 38% 35.35%, 39% 35.15%, 40% 35.05%, 41% 35%, 42% 35.05%, 43% 35.2%, 44% 35.45%, 45% 35.75%, 46% 36.15%, 47% 36.65%, 48% 37.2%, 49% 37.85%, 50% 38.55%, 51% 39.35%, 52% 40.2%, 53% 41.1%, 54% 42.05%, 55% 43.05%, 56% 44.1%, 57% 45.15%, 58% 46.3%, 59% 47.4%, 60% 48.55%, 61% 49.7%, 62% 50.85%, 63% 52%, 64% 53.15%, 65% 54.25%, 66% 55.35%, 67% 56.4%, 68% 57.45%, 69% 58.4%, 70% 59.35%, 71% 60.2%, 72% 61.05%, 73% 61.8%, 74% 62.45%, 75% 63.05%, 76% 63.6%, 77% 64.05%, 78% 64.4%, 79% 64.7%, 80% 64.85%, 81% 65%, 82% 65%, 83% 64.9%, 84% 64.75%, 85% 64.5%, 86% 64.2%, 87% 63.75%, 88% 63.25%, 89% 62.7%, 90% 62.05%, 91% 61.3%, 92% 60.5%, 93% 59.65%, 94% 58.75%, 95% 57.8%, 96% 56.8%, 97% 55.75%, 98% 54.65%, 99% 53.55%, 100% 52.4%);
+  }
+</style>
 
