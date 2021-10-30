@@ -18,23 +18,9 @@
 
 body,
 div,
-p {
-  font-family: "Glacial Indifference", "Courier New", Courier, monospace;
-}
-
-h1 {
-  font-family: "Prata", "Courier New", Courier, monospace;
-}
-
-h2 {
+p,
+li {
   font-family: "Glacial Indifference", sans-serif;
-  font-weight: bold;
-}
-
-.container {
-  width: min(100ch, 100vw - 2rem);
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .stack {
