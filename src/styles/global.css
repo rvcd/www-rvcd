@@ -25,7 +25,6 @@ li {
 
 .stack {
   display: grid;
-  width: fit-content;
 }
 .stack > * {
   grid-area: 1 / -1;
