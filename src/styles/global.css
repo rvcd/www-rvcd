@@ -3,24 +3,24 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Glacial Indifference";
-  src: url("/assets/fonts/GlacialIndifference-Regular.otf");
+  font-family: 'Glacial Indifference';
+  src: url('/assets/fonts/GlacialIndifference-Regular.otf');
 }
 @font-face {
-  font-family: "Glacial Indifference";
-  src: url("/assets/fonts/GlacialIndifference-Bold.otf");
+  font-family: 'Glacial Indifference';
+  src: url('/assets/fonts/GlacialIndifference-Bold.otf');
   font-weight: bold;
 }
 @font-face {
-  font-family: "Prata";
-  src: url("/assets/fonts/Prata-Regular.ttf");
+  font-family: 'Prata';
+  src: url('/assets/fonts/Prata-Regular.ttf');
 }
 
 body,
 div,
 p,
 li {
-  font-family: "Glacial Indifference", sans-serif;
+  font-family: 'Glacial Indifference', sans-serif;
 }
 
 .stack {
@@ -29,4 +29,9 @@ li {
 }
 .stack > * {
   grid-area: 1 / -1;
+}
+
+.gradient-line {
+  height: 3px;
+  background: linear-gradient(90deg, #ffffff00, #fff, #ffffff00);
 }
