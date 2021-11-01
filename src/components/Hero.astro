@@ -1,0 +1,13 @@
+---
+	const {title, img} = Astro.props;
+---
+
+<div class="stack h-96 w-full min-w-full bg-white border-t-4 border-sky">
+	<img class="object-cover object-center h-96 w-full" src={`/assets/images/${img}`} />
+	<div class="bg-gray-900 h-96 w-full bg-opacity-50"></div>
+	<div class="h-full flex justify-center items-center">
+		<h1 class="font-heading text-white text-5xl font-black w-full tracking-widest opacity-90 text-center uppercase">
+			{title}
+		</h1>
+	</div>
+</div>
