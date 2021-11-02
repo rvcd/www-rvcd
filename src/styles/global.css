@@ -43,7 +43,7 @@ li {
   @apply text-gray-600 text-xl;
 }
 .content h3 {
-  @apply text-2xl text-cobalt bg-gray-100 rounded relative right-2 px-2 opacity-80 inline-block;
+  @apply text-2xl text-cobalt bg-gray-100 relative right-2 px-2 opacity-80 inline-block;
 }
 .content p {
   @apply mb-5;

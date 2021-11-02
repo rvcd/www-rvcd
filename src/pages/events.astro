@@ -1,6 +1,19 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
+import EventItem from '../components/EventItem.astro';
+
+const events = Astro.fetchContent('../events/*.md')
+  .filter((event) => !!event.order)
+  .sort((a,b) => (a.order - b.order));
 ---
 
 <MainLayout title="Events" heroImg="hero/hanging-heads.jpg" bg="bg-sky">
+	<div class="grid grid-cols-1 sm:grid-cols-3 gap-10  w-full">
+    <!-- POST BLURBS -->
+    {events.map((event) => (
+      <article class="w-full">
+        <EventItem event={event}/>
+      </article>
+    ))}			
+	</div>
 </MainLayout>

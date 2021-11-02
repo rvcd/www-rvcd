@@ -1,0 +1,37 @@
+---
+import { Markdown } from 'astro/components'
+import Title from './Title.astro'
+import Image from './Image.astro'
+import DateTime from './DateTime.astro'
+
+const {event} = Astro.props;
+---
+
+<div class="flex flex-col justify-between h-full">
+	<Title title={event.title} subtitle={event.subtitle} center={true} />
+
+	<div class="flex-1">
+		<a class="block w-full flex-none mb-3" href={event.external_url || event.astro.url}>
+			<Image 
+				className="max-h-[245px] w-auto border-2 rounded border-accent-color border-opacity-80 hover:border-opacity-100" 
+				src={event.image_url}
+				alt={`${event.title} ${event.subtitle}`}
+				height="245"
+				/>
+		</a>
+		<div class="block content font-bold w-full">
+			<DateTime start={event.start_datetime} end={event.end_datetime} className="block" />
+			<a class="block mb-3" href={event.location_url}>
+				{event.location_display}
+			</a>
+		</div>
+	</div>
+	<div class="flex flex-col justify-end lg:justify-between h-full">
+		<div class="hidden lg:block content font-base antialiased text-gray-700 leading-7 text-base sm:text-lg w-full">
+			<Markdown content={event.astro.source} />
+		</div>
+		<a class="block font-base rounded antialiased text-gray-200 font-bold flex-none mt-3 bg-accent-color w-full text-lg bg-opacity-80 px-2 hover:bg-opacity-90" href={event.external_url}>
+			» {event.more_display}	
+		</a>
+	</div>
+</div>

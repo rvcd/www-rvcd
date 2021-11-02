@@ -1,0 +1,22 @@
+---
+const {title="", subtitle=false, center=false, id=""} = Astro.props;
+
+const _id = id.length ? id : title
+---
+
+<style>
+	.title {
+		@apply flex flex-wrap text-2xl sm:text-3xl  border-b-4 border-opacity-60 mb-4 pb-1;
+	}
+</style>
+
+
+<h2 class="mb-3">
+	<span class={`text-gray-300 block text-3xl bg-sky relative right-2 pl-2 mb-1`}>
+		{title}
+	</span>
+	
+	<span class={`text-gray-600 block text-2xl font-semibold`}>
+		{subtitle}
+	</span>
+</h2>
