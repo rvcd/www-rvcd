@@ -43,10 +43,10 @@ li {
   @apply text-gray-600 text-xl;
 }
 .content h3 {
-  @apply text-2xl text-cobalt bg-gray-100 relative right-2 px-2 opacity-80 inline-block;
+  @apply text-3xl text-cobalt bg-gray-100 relative right-2 px-2 opacity-80 inline-block py-0.5 mb-1;
 }
 .content p {
-  @apply mb-5;
+  @apply mb-8;
 }
 .content p:last-child {
   @apply mb-0;
