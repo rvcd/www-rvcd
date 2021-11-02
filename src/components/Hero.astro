@@ -1,8 +1,8 @@
 ---
-	const {title, img} = Astro.props;
+	const {title, img, bg} = Astro.props;
 ---
 
-<div class="container h-96 w-full min-w-full bg-sky">
+<div class={`container h-96 w-full min-w-full ${bg}`}>
 	<div class="stack h-inner">
 		<img class="object-cover object-center h-inner w-full" src={`/assets/images/${img}`} />
 		<div class="bg-gray-900 w-full bg-opacity-50"></div>
@@ -20,11 +20,11 @@
 		--padding: 0.25rem;
 
 		height: var(--height);
-		padding: var(--padding) 0;
+		padding: var(--padding) 0 0 0;
 	}
 
 	.h-inner {
-		height: calc(var(--height) - (var(--padding) * 2)) 
+		height: calc(var(--height) - (var(--padding))) 
 	}
 
 
