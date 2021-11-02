@@ -35,6 +35,23 @@ li {
   background: linear-gradient(90deg, #ffffff00, #fff, #ffffff00);
 }
 
+.main {
+  @apply max-w-6xl mx-10 xl:mx-auto w-auto xl:w-full py-10;
+}
+
+.content {
+  @apply text-gray-600 text-xl;
+}
+.content h3 {
+  @apply text-2xl text-cobalt bg-gray-100 rounded relative right-2 px-2 opacity-80 inline-block;
+}
+.content p {
+  @apply mb-5;
+}
+.content p:last-child {
+  @apply mb-0;
+}
+
 .wave-clip {
   clip-path: polygon(
     100% 0%,
@@ -141,21 +158,4 @@ li {
     99% 53.55%,
     100% 52.4%
   );
-}
-
-.main {
-  @apply max-w-6xl mx-10 xl:mx-auto w-auto xl:w-full py-10;
-}
-
-.content {
-  @apply text-gray-600 text-xl;
-}
-.content h3 {
-  @apply text-2xl;
-}
-.content p {
-  @apply mb-5;
-}
-.content p:last-child {
-  @apply mb-0;
 }
