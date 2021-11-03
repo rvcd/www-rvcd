@@ -1,6 +1,8 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
 import EventItem from '../components/EventItem.astro';
+import Title from '../components/Title.astro'
+import signatureEvents from '../data/signature-events.json'
 
 const events = Astro.fetchContent('../events/*.md')
   .filter((event) => !!event.order)
@@ -8,12 +10,31 @@ const events = Astro.fetchContent('../events/*.md')
 ---
 
 <MainLayout title="Events" heroImg="hero/hanging-heads.jpg" bg="bg-sky">
-	<div class="grid grid-cols-1 sm:grid-cols-3 gap-10  w-full">
-    <!-- POST BLURBS -->
+	<div class="grid grid-cols-1 sm:grid-cols-2 gap-10  w-full">
     {events.map((event) => (
       <article class="w-full">
         <EventItem event={event}/>
       </article>
     ))}			
+
+		<!-- Signature EVENTS -->
+		<div class="flex flex-col justify-between items-center h-full">
+			<Title title="Signature Events"/>
+			{signatureEvents.map((event) => (
+				<div class="text-center mb-2">
+					<h3 class="sig-event-title">{event.title}</h3>
+					<span class="sig-event-when">{event.when}</span>
+				</div>
+			))}
+		</div>
 	</div>
 </MainLayout>
+
+<style>
+	.sig-event-title {
+		@apply text-gray-600 block text-xl font-semibold;
+	}
+	.sig-event-when {
+		@apply block text-gray-600 text-xl;
+	}
+</style>
