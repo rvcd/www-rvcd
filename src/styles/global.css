@@ -43,7 +43,7 @@ li {
   @apply text-gray-600 text-xl;
 }
 .content h3 {
-  @apply text-3xl text-cobalt border-b-4 border-gray-300 opacity-80 inline-block py-0.5 mb-1;
+  @apply text-3xl text-cobalt opacity-80 inline-block py-0.5 mb-1;
 }
 .content p {
   @apply mb-8;
