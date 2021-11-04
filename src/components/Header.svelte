@@ -4,7 +4,7 @@
 	let menuOpen = false;
 </script>
 
-<div class="relative bg-white">
+<div class="relative bg-white max-w-6xl mx-auto">
 	<div class="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
 		<div class="flex justify-start lg:w-0 lg:flex-1">
 			<a href="/">
@@ -22,11 +22,11 @@
 			</button>
 		</div>
 		<nav class="hidden md:flex space-x-10">
-			<a href="/events" class="tracking-widest text-lg font-base text-gray-700 hover:text-gray-900">
-				EVENTS	
-			</a>
 			<a href="/community" class="tracking-widest text-lg font-base text-gray-700 hover:text-gray-900">
 				COMMUNITY
+			</a>
+			<a href="/events" class="tracking-widest text-lg font-base text-gray-700 hover:text-gray-900">
+				EVENTS	
 			</a>
 			<a href="/involved" class="tracking-widest text-lg font-base text-gray-700 hover:text-gray-900">
 				GET&nbsp;INVOLVED
@@ -56,11 +56,11 @@
 		<div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
 			<div class="py-6 px-5">
 				<div class="grid grid-cols-2 gap-4">
-					<a href="/events" class="tracking-widest text-lg font-base text-gray-500 hover:text-cobalt">
-						EVENTS
-					</a>
 					<a href="/community" class="tracking-widest text-lg font-base text-gray-500 hover:text-cobalt">
 						COMMUNITY
+					</a>
+					<a href="/events" class="tracking-widest text-lg font-base text-gray-500 hover:text-cobalt">
+						EVENTS
 					</a>
 					<a href="/involved" class="tracking-widest text-lg font-base text-gray-500 hover:text-cobalt">
 						Get&nbsp;INVOLVED
