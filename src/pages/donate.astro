@@ -3,7 +3,18 @@ import MainLayout from '../layouts/MainLayout.astro';
 ---
 
 <MainLayout title="Donate" heroImg="hero/king-queen.jpg" bg="bg-wine bg-opacity-80">
-	<div class="grid grid-cols-3">
-		
+	<div class="grid sm:grid-cols-2">
+		<div class="flex flex-col items-center mb-5">
+			<a href="https://www.paypal.com/donate?hosted_button_id=DNSR3JW3RD69L" class="flex items-center mb-5 py-3 px-5 rounded-full bg-wine">
+				<i class="paypal mr-2"></i> <span class="block text-lg text-gray-300">Donate with PayPal</span>
+			</a>
+		</div>
+		<div class="bg-wine px-2 py-0.5">
+			<h3 class="bg-wine text-2xl text-gray-300 ">Donate Today!</h3>
+			<p class="text-xl text-gray-300">
+				By donating to your Creative District, you are
+				investing in your Community.
+			</p>
+		</div>
 	</div>
 </MainLayout>
