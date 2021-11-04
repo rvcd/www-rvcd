@@ -21,7 +21,7 @@ const events = Astro.fetchContent('../events/*.md')
 		<div class="flex flex-col justify-between items-center h-full">
 			<Title title="Signature Events"/>
 			{signatureEvents.map((event) => (
-				<div class="text-center mb-2">
+				<div class="text-center mb-4">
 					<h3 class="sig-event-title">{event.title}</h3>
 					<span class="sig-event-when">{event.when}</span>
 				</div>
@@ -29,13 +29,13 @@ const events = Astro.fetchContent('../events/*.md')
 		</div>
 
 		<!-- New Event Form -->
-		<div class="sm:col-span-2">
+		<div class="sm:col-span-2 sm:relative sm:right-4">
 			<div class=" bg-sky p-4 flex-wrap justify-center sm:justify-end items-center flex sm:inline-flex">
 				<p class="text-gray-100 text-xl my-2 hidden sm:block">We'd love to feature your upcomming event!</p>
 				<a 
 					class="tracking-widest sm:ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-lg font-base text-white bg-wine"
 					href="https://docs.google.com/forms/d/e/1FAIpQLSecDPDw_NV4fwkAQFxXZEFOw-Nla4Q8XlRq8dWs9UmQyCZR3g/viewform?usp=sf_link"
-				>New Event</a>
+				>Let Us Know</a>
 			</div>
 		</div>
 	</div>
@@ -43,9 +43,9 @@ const events = Astro.fetchContent('../events/*.md')
 
 <style>
 	.sig-event-title {
-		@apply text-gray-600 block text-xl font-semibold;
+		@apply text-gray-600 block text-2xl font-semibold;
 	}
 	.sig-event-when {
-		@apply block text-gray-600 text-xl;
+		@apply block text-gray-600 text-2xl;
 	}
 </style>
