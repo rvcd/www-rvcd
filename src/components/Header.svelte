@@ -57,7 +57,7 @@
 			From: "opacity-100 scale-100"
 			To: "opacity-0 scale-95"
 	-->
-	<div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right" class:hidden="{!menuOpen}" use:clickOutside on:click-outside={() => menuOpen = false}>
+	<div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right z-20" class:hidden="{!menuOpen}" use:clickOutside on:click-outside={() => menuOpen = false}>
 		<div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
 			<div class="py-6 px-5">
 				<div class="grid grid-cols-2 gap-4">
