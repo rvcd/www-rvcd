@@ -68,7 +68,7 @@
 						EVENTS
 					</a>
 					<a href="/involved" class="tracking-widest text-lg font-base text-gray-500 hover:text-cobalt">
-						Get&nbsp;INVOLVED
+						GET&nbsp;INVOLVED
 					</a>
 					<a href="/about" class="tracking-widest text-lg font-base text-gray-500 hover:text-cobalt">
 						ABOUT
