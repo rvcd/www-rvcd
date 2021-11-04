@@ -9,7 +9,12 @@
 		<div class="flex justify-start lg:w-0 lg:flex-1">
 			<a href="/">
 				<span class="sr-only">Home</span>
-				<img class="h-10 w-auto sm:h-12" src="/assets/images/logo-rvcd-sm.png" alt="">
+				<img 
+					class="h-10 w-auto sm:h-12"
+					width="48"
+					height="48" 
+					src="https://ik.imagekit.io/thegoldendino/rvcd/brand/logo-submark-2_o9JQAlsAv.png?updatedAt=1636004430482&tr=w-48,h-48" 
+					alt="RVCD">
 			</a>
 		</div>
 		<div class="-mr-2 -my-2 md:hidden">
