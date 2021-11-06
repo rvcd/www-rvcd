@@ -52,7 +52,7 @@ li {
   @apply mb-0;
 }
 .content a {
-  @apply text-sky inline-block pl-5;
+  @apply text-sky block pl-5 break-all lg:break-normal;
   text-indent: -1.25rem;
 }
 
