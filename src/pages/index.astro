@@ -55,3 +55,24 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   </div>
   </div>
 </BaseLayout>
+
+<style>
+	h1 {
+		animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+		animation-name: fadein;
+
+	}
+
+	@keyframes fadein {
+		from {
+			opacity: 0%;
+			transform: translate(20%)
+		}
+
+		to {
+			opacity: 60%;
+			transform: translate(0)
+		}
+	}
+</style>

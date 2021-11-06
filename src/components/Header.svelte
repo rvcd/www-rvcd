@@ -74,34 +74,36 @@
 					From: "opacity-100 scale-100"
 					To: "opacity-0 scale-95"
 			-->
-			<div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right z-20" class:hidden="{!menuOpen}" use:clickOutside on:click-outside={() => menuOpen = false}>
-				<div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
-					<div class="py-6 px-5">
-						<div class="grid grid-cols-2 gap-4">
-							<a href="/community" class="tracking-widest text-lg font-base text-gray-500 hover:text-cobalt">
-								COMMUNITY
-							</a>
-							<a href="/events" class="tracking-widest text-lg font-base text-gray-500 hover:text-cobalt">
-								EVENTS
-							</a>
-							<a href="/involved" class="tracking-widest text-lg font-base text-gray-500 hover:text-cobalt">
-								GET&nbsp;INVOLVED
-							</a>
-							<a href="/press" class="tracking-widest text-lg font-base text-gray-500 hover:text-cobalt">
-								PRESS
-							</a>
-							<a href="/about" class="tracking-widest text-lg font-base text-gray-500 hover:text-cobalt">
-								ABOUT
-							</a>
-							<div>
-								<a href="/donate" class="tracking-widest whitespace-nowrap inline-flex items-center justify-center px-4 py-2 mr-4 border border-transparent rounded-md shadow-sm text-lg font-base text-white bg-wine w-auto">
-									♥ DONATE 
+			{#if menuOpen}
+				<div class="absolute top-0 inset-x-0 p-2 z-20"  use:clickOutside on:click-outside={() => menuOpen = false} transition:fly="{{ y: -100, duration: 200}}">
+					<div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+						<div class="py-6 px-5">
+							<div class="grid grid-cols-2 gap-4">
+								<a href="/community" class="tracking-widest text-lg font-base text-gray-500 hover:text-cobalt">
+									COMMUNITY
 								</a>
+								<a href="/events" class="tracking-widest text-lg font-base text-gray-500 hover:text-cobalt">
+									EVENTS
+								</a>
+								<a href="/involved" class="tracking-widest text-lg font-base text-gray-500 hover:text-cobalt">
+									GET&nbsp;INVOLVED
+								</a>
+								<a href="/press" class="tracking-widest text-lg font-base text-gray-500 hover:text-cobalt">
+									PRESS
+								</a>
+								<a href="/about" class="tracking-widest text-lg font-base text-gray-500 hover:text-cobalt">
+									ABOUT
+								</a>
+								<div>
+									<a href="/donate" class="tracking-widest whitespace-nowrap inline-flex items-center justify-center px-4 py-2 mr-4 border border-transparent rounded-md shadow-sm text-lg font-base text-white bg-wine w-auto">
+										♥ DONATE 
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div> 
+			{/if} 
 		</div> 
 	</div>
 {/key}
