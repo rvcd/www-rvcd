@@ -51,6 +51,10 @@ li {
 .content p:last-child {
   @apply mb-0;
 }
+.content a {
+  @apply text-sky inline-block pl-5;
+  text-indent: -1.25rem;
+}
 
 i.paypal {
   display: inline-block;

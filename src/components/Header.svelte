@@ -5,19 +5,19 @@
 </script>
 
 <div class="relative bg-white max-w-6xl mx-auto">
-	<div class="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
+	<div class="flex justify-between items-center px-6 py-4 lg:justify-start lg:space-x-10 ">
 		<div class="flex justify-start lg:w-0 lg:flex-1">
 			<a href="/">
 				<span class="sr-only">Home</span>
 				<img 
-					class="h-10 w-auto sm:h-12"
+					class="h-12 w-auto"
 					width="48"
 					height="48" 
 					src="https://ik.imagekit.io/thegoldendino/rvcd/brand/logo-submark-2_o9JQAlsAv.png?updatedAt=1636004430482&tr=w-48,h-48" 
 					alt="RVCD">
 			</a>
 		</div>
-		<div class="-mr-2 -my-2 md:hidden">
+		<div class="-mr-2 -my-2 lg:hidden">
 			<button on:click={() => menuOpen = !menuOpen} type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-wine" aria-expanded="false">
 				<span class="sr-only">Open menu</span>
 				<!-- Heroicon name: outline/menu -->
@@ -26,7 +26,7 @@
 				</svg>
 			</button>
 		</div>
-		<nav class="hidden md:flex space-x-10">
+		<nav class="hidden lg:flex space-x-10">
 			<a href="/community" class="tracking-widest text-lg font-base text-gray-700 hover:text-gray-900">
 				COMMUNITY
 			</a>
@@ -36,11 +36,14 @@
 			<a href="/involved" class="tracking-widest text-lg font-base text-gray-700 hover:text-gray-900">
 				GET&nbsp;INVOLVED
 			</a>
+			<a href="/press" class="tracking-widest text-lg font-base text-gray-700 hover:text-gray-900">
+				PRESS
+			</a>
 			<a href="/about" class="tracking-widest text-lg font-base text-gray-700 hover:text-gray-900">
 				ABOUT
 			</a>
 		</nav>
-		<div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+		<div class="hidden lg:flex items-center justify-end lg:flex-1 lg:w-0">
 			<a href="/donate" class="tracking-widest ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-lg font-base text-white bg-wine">
 				♥ DONATE 
 			</a>
@@ -70,14 +73,17 @@
 					<a href="/involved" class="tracking-widest text-lg font-base text-gray-500 hover:text-cobalt">
 						GET&nbsp;INVOLVED
 					</a>
+					<a href="/press" class="tracking-widest text-lg font-base text-gray-500 hover:text-cobalt">
+						PRESS
+					</a>
 					<a href="/about" class="tracking-widest text-lg font-base text-gray-500 hover:text-cobalt">
 						ABOUT
 					</a>
-				</div>
-				<div class="mt-6">
-					<a href="/donate" class="tracking-widest w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-lg text-white bg-wine">
-						♥ DONATE	
-					</a>
+					<div>
+						<a href="/donate" class="tracking-widest whitespace-nowrap inline-flex items-center justify-center px-4 py-2 mr-4 border border-transparent rounded-md shadow-sm text-lg font-base text-white bg-wine w-auto">
+							♥ DONATE 
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
