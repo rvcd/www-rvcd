@@ -3,7 +3,7 @@
 import Header from '../components/Header.svelte';
 import Footer from '../components/Footer.astro';
 
-const {title, bg} = Astro.props;
+const {title, bg, showDino} = Astro.props;
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -48,7 +48,7 @@ const {title, bg} = Astro.props;
 			<slot/>
 		</main>
 		<footer>
-			<Footer/>
+			<Footer showDino={showDino} />
 		</footer>
   </body>
 </html>

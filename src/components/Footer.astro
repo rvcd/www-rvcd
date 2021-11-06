@@ -1,9 +1,11 @@
 ---
 import Image from './Image.astro'
 import GoldenDino from './GoldenDino.svelte'
+
+const {showDino = false } = Astro.props;
 ---
 
-<div class="h-full w-full bg-cobalt border-t-4 border-gray-200 p-5">
+<div class="h-full w-full bg-cobalt border-t-4 border-gray-200 p-5" >
 	<div class="flex flex-wrap justify-around max-w-6xl mx-10 xl:mx-auto w-auto xl:w-full items-center h-full">
 
 		<div class="flex  space-x-10 h-full items-center">
@@ -24,8 +26,11 @@ import GoldenDino from './GoldenDino.svelte'
 			Adefua Education Workshop and is certified by the
 			Washington State Arts Commission.
 		</p>
-		<div class="self-end">
-			<GoldenDino client:visible />
-		</div>
+
+		{showDino && (
+			<div class="self-end">
+				<GoldenDino client:visible />
+			</div>
+		)}
 	</div>
 </div>
