@@ -6,7 +6,7 @@ image_url: https://ik.imagekit.io/thegoldendino/rvcd/events/2021/odunde_festival
 start_datetime: November 20, 2021 15:30
 location_display: Rainier Arts Center
 location_url: https://goo.gl/maps/jK1HgqqLc8rvQ7ZaA
-more_display: Event Page
+more_display: More Info
 external_url: https://www.adefuacenter.org/odunde-festival.html
 ---
 
