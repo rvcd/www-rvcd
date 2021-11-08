@@ -25,9 +25,9 @@
 							<span class="sr-only">Home</span>
 							<img 
 								class="h-12 w-auto"
-								width="48"
-								height="48" 
-								src="https://ik.imagekit.io/thegoldendino/rvcd/brand/logo-submark-2_o9JQAlsAv.png?updatedAt=1636004430482&tr=w-48,h-48" 
+								width="96"
+								height="96" 
+								src="https://ik.imagekit.io/thegoldendino/rvcd/brand/logo-submark-2_o9JQAlsAv.png?updatedAt=1636004430482&tr=w-96,h-96" 
 								alt="RVCD">
 						</a>
 					</div>
