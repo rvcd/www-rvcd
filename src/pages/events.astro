@@ -8,7 +8,7 @@ const events = Astro.fetchContent('../events/*.md')
   .sort((a,b) => (a.order - b.order));
 ---
 
-<MainLayout title="Events" heroImg="https://ik.imagekit.io/thegoldendino/rvcd/hero/hanging-heads_XTwLlID0v.jpg?updatedAt=1636006436488&tr=w-1024,f-jpg,pr-true" bg="bg-sky">
+<MainLayout infoKey="flying-heads" title="Events" heroImg="https://ik.imagekit.io/thegoldendino/rvcd/hero/hanging-heads_XTwLlID0v.jpg?updatedAt=1636006436488&tr=w-1024,f-jpg,pr-true" bg="bg-sky">
 	<div class="grid grid-cols-1 sm:grid-cols-3 gap-10  w-full">
     {events.map((event) => (
       <article class="w-full">
