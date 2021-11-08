@@ -5,19 +5,21 @@
 @font-face {
   font-family: 'Glacial Indifference';
   src: url('/assets/fonts/GlacialIndifference-Regular.otf'),
+    url('/assets/fonts/GlacialIndifference-Regular.otf'),
     local('Times New Roman');
   font-display: swap;
 }
 @font-face {
   font-family: 'Glacial Indifference';
   src: url('/assets/fonts/GlacialIndifference-Bold.otf'),
-    local('Times New Roman');
+    url('/assets/fonts/GlacialIndifference-Bold.otf'), local('Times New Roman');
   font-weight: bold;
   font-display: swap;
 }
 @font-face {
   font-family: 'Prata';
-  src: url('/assets/fonts/Prata-Regular.ttf'), local('Verdana');
+  src: url('/assets/fonts/Prata-Regular.ttf'),
+    url('/assets/fonts/Prata-Regular.ttf'), local('Verdana');
   font-display: swap;
 }
 
