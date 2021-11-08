@@ -21,7 +21,9 @@ const {title, bg, showDino} = Astro.props;
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 		<link rel="manifest" href="/site.webmanifest">
     <title>{title} | RVCD</title>
-    <link rel="stylesheet" type="text/css" href={Astro.resolve("../styles/global.css")}>
+    <!-- <link rel="stylesheet" type="text/css" href={Astro.resolve("../styles/global.css")}> -->
+		<link rel="preload" href={Astro.resolve("../styles/global.css")} as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript><link rel="stylesheet" href={Astro.resolve("../styles/global.css")}></noscript>
 		<meta
 			property="og:url"
 			content="https://www.rainiervalleycreativedistrict.com{ Astro.request.url }"
