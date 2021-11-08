@@ -17,6 +17,16 @@ const displayTitle = `${Astro.request.url}` === '/' ? 'RVCD' : `${title} - RVCD`
 
     <title>{displayTitle}</title>
 
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-3VXE8WRK27"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-3VXE8WRK27');
+		</script>
+
 		<script type="application/ld+json">
 			{
 				"@context": "https://schema.org",
