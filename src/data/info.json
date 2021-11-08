@@ -1,0 +1,37 @@
+{
+  "dancers": {
+    "title": "Kouyaté Arts",
+    "description": "Kouyaté Arts drum and dancers on Audefua Day, June 26th 2021 at the Rainier Valley Arts Center.",
+    "url": "https://www.kouyatearts.com/",
+    "location_url": "https://goo.gl/maps/WmZa9i4HtbG5C5Di9",
+    "image_url": "https://ik.imagekit.io/thegoldendino/rvcd/hero/dancers_XThkdtkZqyv.jpg?updatedAt=1636006417541&tr=w-1024,f-jpg,pr-true"
+  },
+  "faces": {
+    "title": "Mapes 52nd Avenue S. Walkway Plaza Wall Mural #2",
+    "description": "Henderson St. entrance to the Mapes 52nd Avenue S. Walkway by artist Mary Cross",
+    "url": "https://marycoss.com/",
+    "location_url": "https://goo.gl/maps/XwSuJsPw7V7bsu5L9",
+    "image_url": "https://ik.imagekit.io/thegoldendino/rvcd/hero/faces_gx6HJSkGSh.jpg?updatedAt=1636006442406&tr=w-1024,f-jpg,pr-true"
+  },
+  "king-queen": {
+    "title": "The King & Queen of Rainier Beach",
+    "description": "Two free-standing sculptures of a pair of over-size, stylized chess pieces created by artist Peter Reiquam as a tribute to Detective Denise \"Cookie\" Bouldin.",
+    "url": "https://www.reiquam.com/the-king-and-queen-of-rainier-beach-2016",
+    "location_url": "https://goo.gl/maps/gd5NCMDbeGb4Y3Lu9",
+    "image_url": "https://ik.imagekit.io/thegoldendino/rvcd/hero/king-queen_COYYOV3jh.jpg?updatedAt=1636006441855&tr=w-1024,f-jpg,pr-true"
+  },
+  "shainas-garden": {
+    "title": "Shaina's Garden",
+    "description": "Tap Connection wall mural.",
+    "url": "https://www.nwtapconnection.org/",
+    "location_url": "https://goo.gl/maps/WFRRMbaT76GQ3k8w8",
+    "image_url": "https://ik.imagekit.io/thegoldendino/rvcd/hero/shainas-garden_beNTfr3UppdB.jpg?updatedAt=1636006417641&tr=w-1024,f-jpg,pr-true"
+  },
+  "mosaic": {
+    "title": "Rainier Valley Cultural Center 3515 Alaska",
+    "description": "Mosaic Sculpture outside of the Rainier Arts Center.",
+    "url": "https://www.rainierartscenter.org/",
+    "location_url": "https://goo.gl/maps/WmZa9i4HtbG5C5Di9",
+    "image_url": "https://ik.imagekit.io/thegoldendino/rvcd/hero/mosaic_1mLpjyVOy.jpg?updatedAt=1636006442468&tr=w-1024,f-jpg,pr-true"
+  }
+}

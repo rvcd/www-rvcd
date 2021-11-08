@@ -2,11 +2,11 @@
 import BaseLayout from '../layouts/BaseLayout.astro'
 import Hero from '../components/Hero.astro'
 
-const {title, heroImg, bg, showDino} = Astro.props
+const {title, heroImg, bg, showDino, infoKey} = Astro.props
 ---
 
 <BaseLayout title={title} bg={bg} showDino={showDino}>
-	<Hero title={title} img={heroImg} bg={bg} />
+	<Hero title={title} img={heroImg} bg={bg} infoKey={infoKey} />
 	<div class="w-full bg-gray-200 stack">
 		<div class={`wave-clip ${bg} w-full h-60 sm:h-72 lg:h-96`}></div>
 		<div class="main z-10">

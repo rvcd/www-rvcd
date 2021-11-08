@@ -32,11 +32,11 @@ const {event} = Astro.props;
 			</a>
 		</div>
 	</div>
-	<div class="flex flex-col justify-end lg:justify-between h-full">
+	<div class="flex flex-col h-full">
 		<div class="hidden lg:block content font-base antialiased text-gray-700 leading-7 text-base sm:text-lg w-full">
 			<Markdown content={event.astro.source} />
 		</div>
-		<a class="block font-base rounded antialiased text-gray-200 font-bold flex-none mt-3 bg-accent-color w-full text-lg bg-opacity-80 px-2 hover:bg-opacity-90" href={event.external_url}>
+		<a class="block text-right font-base rounded antialiased text-sky font-bold flex-none mt-3 bg-accent-color w-full text-lg bg-opacity-80 px-2 hover:bg-opacity-90" href={event.external_url}>
 			» {event.more_display}	
 		</a>
 	</div>
