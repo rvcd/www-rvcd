@@ -4,22 +4,18 @@
 
 @font-face {
   font-family: 'Glacial Indifference';
-  src: url('/assets/fonts/GlacialIndifference-Regular.otf'),
-    url('/assets/fonts/GlacialIndifference-Regular.otf'),
-    local('Times New Roman');
+  src: url('/assets/fonts/GlacialIndifference-Regular.otf') format('truetype');
   font-display: swap;
 }
 @font-face {
   font-family: 'Glacial Indifference';
-  src: url('/assets/fonts/GlacialIndifference-Bold.otf'),
-    url('/assets/fonts/GlacialIndifference-Bold.otf'), local('Times New Roman');
+  src: url('/assets/fonts/GlacialIndifference-Bold.otf') format('truetype');
   font-weight: bold;
   font-display: swap;
 }
 @font-face {
   font-family: 'Prata';
-  src: url('/assets/fonts/Prata-Regular.ttf'),
-    url('/assets/fonts/Prata-Regular.ttf'), local('Verdana');
+  src: url('/assets/fonts/Prata-Regular.ttf') format('truetype');
   font-display: swap;
 }
 
