@@ -9,17 +9,21 @@ const {showDino = false } = Astro.props;
 	<div class="flex flex-wrap justify-around max-w-6xl mx-10 xl:mx-auto w-auto xl:w-full items-center h-full">
 
 		<div class="flex  space-x-10 h-full items-center">
-			<Image
-				src="https://ik.imagekit.io/thegoldendino/hfw/sponsors/Transparent-background-ArtsWA-logo_State-with-full-name_2019_2HKh-O2il0I.png?updatedAt=1628630949914"
-				alt="Washington State Arts Commission"
-				className="w-auto h-24 bg-white border-2  border-white"
-				raw={true}
-				height="70" />
-			<Image
-				src="https://ik.imagekit.io/thegoldendino/rvcd/community/adefua_9aRQdrJV2.png?updatedAt=1629866344930"
-				alt="ADEFUA Cultural Education Workshop"
-				className="w-auto h-24"
-				height="70" />
+			<a href="https://www.arts.wa.gov/">
+				<Image
+					src="https://ik.imagekit.io/thegoldendino/hfw/sponsors/Transparent-background-ArtsWA-logo_State-with-full-name_2019_2HKh-O2il0I.png?updatedAt=1628630949914"
+					alt="Washington State Arts Commission"
+					className="w-auto h-24 bg-white border-2  border-white"
+					raw={true}
+					height="96" />
+			</a>
+			<a href="https://www.adefuacenter.org/">
+				<Image
+					src="https://ik.imagekit.io/thegoldendino/rvcd/community/adefua_9aRQdrJV2.png?updatedAt=1629866344930"
+					alt="ADEFUA Cultural Education Workshop"
+					className="w-auto h-24"
+					height="96" />
+			</a>
 		</div>
 		<p class="italic text-gray-200 text-center sm:text-left  sm:w-1/2 mt-4 sm:mt-0">
 			Rainier Valley Creative District is a program of
