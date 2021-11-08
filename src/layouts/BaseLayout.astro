@@ -1,29 +1,36 @@
 ---
-// Component Imports
 import Header from '../components/Header.svelte';
 import Footer from '../components/Footer.astro';
 
 const {title, bg, showDino} = Astro.props;
 
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
 ---
 <html lang="en">
   <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" type="text/css" href={Astro.resolve("../styles/global.css")}>
+
+    <title>{title} - RVCD</title>
+
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Organization",
+				"name": "Rainier Valley Creative District",
+				"url": "https://rainiervalleycreativedistrict.com",
+				"logo": "https://ik.imagekit.io/thegoldendino/rvcd/brand/logo-lg_uqHNphXcj.png?updatedAt=1636003240128&tr=w-630,h-630,r-max,bg-00000000"
+			}
+    </script>
+
     <meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta
 			name="description"
 			content="Unifying Communities of Rainier Valley through Arts and Culture"
 		/>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-		<link rel="manifest" href="/site.webmanifest">
-    <title>{title} | RVCD</title>
-    <!-- <link rel="stylesheet" type="text/css" href={Astro.resolve("../styles/global.css")}> -->
-		<link rel="preload" href={Astro.resolve("../styles/global.css")} as="style" onload="this.onload=null;this.rel='stylesheet'">
-		<noscript><link rel="stylesheet" href={Astro.resolve("../styles/global.css")}></noscript>
 		<meta
 			property="og:url"
 			content="https://www.rainiervalleycreativedistrict.com{ Astro.request.url }"

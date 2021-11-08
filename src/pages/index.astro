@@ -2,9 +2,11 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import InfoBtn from '../components/InfoBtn.svelte';
 import info from '../data/info.json';
+
+const description = "Rainier Valley Creative District is an active arts and culture coalition that advocates for Rainier Valley’s artistic and cultural community by fostering collaboration, boosting collective visibility, and addressing economic inequity."
 ---
 
-<BaseLayout title="Home" bg="bg-sky">
+<BaseLayout title="Home" description={description} bg="bg-sky">
   <div class="mt-1 min-w-full">
   <div class="stack h-96 w-full  bg-white ">
     <img 
