@@ -10,5 +10,3 @@ location_url: https://goo.gl/maps/XwSuJsPw7V7bsu5L9
 more_display: More Info
 external_url: https://www.missioncontinues.org/event/details/a1l8Z00000ANweuQAD/
 ---
-
-Report for Duty in support of the Rainier Beach Community: On this mission, we are partnering up with Rainier Beach Action Coalition and Rainier Beach: A Positive Place for Youth, with logistical supports from the Seattle Department of Transportation and Seattle Public Utilities. Our primary goal is to recycle dirt around the trees and walking path, replace the dirt with mulch, and plant tulips. Additionally, we will be doing sweeps of the area for litter. If there is ample time and resources we will do a leaf clean-up near Rainier Beach Highschool across the street.
