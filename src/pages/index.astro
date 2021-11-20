@@ -1,7 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Image from '../components/Image.astro';
 import InfoBtn from '../components/InfoBtn.svelte';
 import info from '../data/info.json';
+import goals from '../data/goals.json';
 
 const description = "Rainier Valley Creative District is an active arts and culture coalition that advocates for Rainier Valley’s artistic and cultural community by fostering collaboration, boosting collective visibility, and addressing economic inequity."
 ---
@@ -28,9 +30,7 @@ const description = "Rainier Valley Creative District is an active arts and cult
       </h1>
     </div>
     <div class="place-self-end self-end mb-5 mr-5 ">
-      <InfoBtn client:idle info={info["dancers"]}>
-        <h1 class="font-heading text-white text-5xl">TEST</h1>
-      </InfoBtn>
+      <InfoBtn client:idle info={info["dancers"]} />
     </div>
   </div>
 
@@ -41,16 +41,19 @@ const description = "Rainier Valley Creative District is an active arts and cult
         <h2 class="font-secondary text-3xl text-center">Your creative district will</h2>
         <div class="gradient-line mt-3 mb-4"></div>
         <ul class="text-2xl mx-6">
-          <li class="flex items-top mb-2"><svg class="inline-block mr-3 h-7 w-3 flex-none fill-current" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"/></svg>Unify the creative community and build deeper connections.</li>
-          <li class="flex items-top mb-2"><svg class="inline-block mr-3 h-7 w-3 flex-none fill-current" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"/></svg>Foster new opportunities for collaboration.</li>
-          <li class="flex items-top mb-2"><svg class="inline-block mr-3 h-7 w-3 flex-none fill-current" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"/></svg>Support, facilitate and grow arts & cultural events.</li>
-          <li class="flex items-top mb-2"><svg class="inline-block mr-3 h-7 w-3 flex-none fill-current" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"/></svg>Advocate for arts-centered development.</li>
-          <li class="flex items-top mb-2"><svg class="inline-block mr-3 h-7 w-3 flex-none fill-current" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"/></svg>Establish a thriving creative hub.</li>
-          <li class="flex items-top mb-2"><svg class="inline-block mr-3 h-7 w-3 flex-none fill-current" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"/></svg>Provide for economic stabilization.</li>
-          <li class="flex items-top mb-2"><svg class="inline-block mr-3 h-7 w-3 flex-none fill-current" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"/></svg>Preserve cultural diversity and artistic character.</li>
+          {goals.map((goal) => (
+            <li class="flex items-top mb-2"><svg class="inline-block mr-3 h-7 w-3 flex-none fill-current" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"/></svg>{goal}</li>
+          ))}
         </ul>
       </div>
-      <div class="">
+      <div >
+        <div class="gradient-line mb-10 block lg:hidden"></div>
+        <Image
+          className="h-auto mx-auto w-full max-w-sm rounded-xl  border-4 border-white mb-10"
+          src="https://ik.imagekit.io/thegoldendino/rvcd/events/2021/rvcd-ribbon-cutting-ceremony_CMMQEiJvB.png?updatedAt=1637431930687"
+          width="376"
+          alt="Ribbon Cutting Ceremony - Nov 20th, 3pm @ Rainier Arts Center"
+        />
         <div class="gradient-line mb-10 block lg:hidden"></div>
         <img 
           class="h-auto mx-auto w-full max-w-sm rounded-xl  border-4 border-white"

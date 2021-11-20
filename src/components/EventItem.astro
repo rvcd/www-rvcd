@@ -40,9 +40,11 @@ const {event} = Astro.props;
 				</div>
 			)}
 		</div>
-		<hr class="h-1 bg-gray-300 w-full"/>
-		<a class="block text-right font-base rounded antialiased text-sky font-bold flex-none mt-3 bg-accent-color w-full text-lg bg-opacity-80 px-2 hover:bg-opacity-90" href={event.external_url}>
-			» {event.more_display}	
-		</a>
+		{ event.external_url && (
+			<hr class="h-1 bg-gray-300 w-full"/>
+			<a class="block text-right font-base rounded antialiased text-sky font-bold flex-none mt-3 bg-accent-color w-full text-lg bg-opacity-80 px-2 hover:bg-opacity-90" href={event.external_url}>
+				» {event.more_display}	
+			</a>
+		)}
 	</div>
 </div>

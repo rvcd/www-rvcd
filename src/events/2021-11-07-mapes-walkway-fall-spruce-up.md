@@ -1,5 +1,5 @@
 ---
-order: 2
+order: 3
 title: Mapes Walkway Fall Spruce Up
 subtitle: Service Project
 image_url: https://www.dropbox.com/s/ky2s0e5ii44n9x8/getyourhandsdirty.png?raw=1
