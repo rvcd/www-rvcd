@@ -13,7 +13,7 @@ import community from '../data/community.json'
 
 	<div class="flex flex-wrap justify-evenly">
 
-		{Object.values(community).map((member) => (
+		{Object.values(community).map((member: {href: string, src: string, width: string, height: string, alt: string}) => (
 			<div class="wrapper">
 				<a href={member.href}>
 					<Image
