@@ -3,9 +3,15 @@ import MainLayout from '../layouts/MainLayout.astro';
 import EventItem from '../components/EventItem.astro';
 import signatureEvents from '../data/signature-events.json'
 
-const events = Astro.fetchContent('../events/*.md')
-  .filter((event) => !!event.order)
-  .sort((a,b) => (a.order - b.order));
+let events = [];
+
+try {
+	events = Astro.fetchContent('../events/*.md')
+		.filter((event) => !!event.order)
+		.sort((a,b) => (a.order - b.order));
+} catch (error) {
+	console.error("No events available in the events folder.")
+}
 ---
 
 <MainLayout infoKey="flying-heads" title="Events" heroImg="https://ik.imagekit.io/thegoldendino/rvcd/hero/hanging-heads_XTwLlID0v.jpg?updatedAt=1636006436488&tr=w-1024,f-jpg,pr-true" bg="bg-sky">
