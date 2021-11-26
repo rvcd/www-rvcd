@@ -2,9 +2,9 @@
 import Header from '../components/Header.svelte';
 import Footer from '../components/Footer.astro';
 
-const {title, bg, showDino} = Astro.props;
+const {title, bg, showDino, titleSuffix=" - RVCD"} = Astro.props;
 
-const displayTitle = `${Astro.request.url}` === '/' ? 'RVCD' : `${title} - RVCD`
+const displayTitle = `${title}${titleSuffix}`
 
 ---
 <html lang="en">
