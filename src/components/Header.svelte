@@ -1,11 +1,10 @@
 <script>
-	import { fly, fade } from 'svelte/transition';
+	import { fly } from 'svelte/transition';
 	import { clickOutside } from '../lib/clickOutside.js';
 
 	let menuOpen = false;
 	let y = 0;
 	let fixHeader = false;
-	let triggerTransition = false;
 
 	function handleScroll(event) {
 		menuOpen = false;
