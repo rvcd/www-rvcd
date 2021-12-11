@@ -9,7 +9,7 @@
 	function handleScroll(event) {
 		menuOpen = false;
 		const newY = event.target.scrollingElement.scrollTop;
-		fixHeader = newY < y && y !== 0;
+		fixHeader = (newY < y && (y > 144 || (y <= 144 && fixHeader)));
 		y = newY;
 	}
 </script>
