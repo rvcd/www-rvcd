@@ -3,20 +3,26 @@ import {Markdown} from 'astro/components'
 import MainLayout from '../layouts/MainLayout.astro';
 ---
 
-<MainLayout infoKey="seattle", title="Press" heroImg="https://ik.imagekit.io/thegoldendino/rvcd/hero/seattle_e7GvcLR9k.JPG?updatedAt=1636175567171&tr=w-1024,f-jpg,pr-true" bg="bg-gray-300">
-	<div class="content">
-		<Markdown>
-			### RVCD Press Announcement 
+<MainLayout infoKey="seattle" title="Press" heroImg="https://ik.imagekit.io/thegoldendino/rvcd/hero/seattle_e7GvcLR9k.JPG?updatedAt=1636175567171&tr=w-1024,f-jpg,pr-true" bg="bg-gray-300">
+	<div class="sm:flex">
+		<section class="content mb-10 sm:mr-10">
+			<Markdown>
+				### RVCD Press Announcement 
 
-			["RVCD Press Anouncement." *Rainier Valley Creative District*, rainiervalleycreativedistrict.com/assets/pdfs/RVCD_Press_Announce.pdf](/assets/pdfs/RVCD_Press_Announce.pdf)
+				["RVCD Press Anouncement." *Rainier Valley Creative District*, rainiervalleycreativedistrict.com/assets/pdfs/RVCD_Press_Announce.pdf](/assets/pdfs/RVCD_Press_Announce.pdf)
 
-			### Meet Your New Creative District, Seattle
+				### Meet Your New Creative District, Seattle
 
-			[Keimig, Jasmyne. "Meet Your New Creative District, Seattle." *The Stranger*, 2 Nov. 2021, www.thestranger.com/slog/2021/11/02/62482946/meet-your-new-creative-district-seattle](https://www.thestranger.com/slog/2021/11/02/62482946/meet-your-new-creative-district-seattle)
+				[Keimig, Jasmyne. "Meet Your New Creative District, Seattle." *The Stranger*, 2 Nov. 2021, www.thestranger.com/slog/2021/11/02/62482946/meet-your-new-creative-district-seattle](https://www.thestranger.com/slog/2021/11/02/62482946/meet-your-new-creative-district-seattle)
 
-			### The Rainier Valley Creative District Could Come This Summer (Fingers Crossed!)
+				### The Rainier Valley Creative District Could Come This Summer (Fingers Crossed!)
 
-			[Keimig, Jasmyne. "The Rainier Valley Creative District Could Come This Summer (Fingers Crossed!)." *The Stranger*, 18 Feb. 2021, www.thestranger.com/slog/2021/02/18/55324536/the-rainier-valley-creative-district-is-coming-this-summer-fingers-crossed](https://www.thestranger.com/slog/2021/02/18/55324536/the-rainier-valley-creative-district-is-coming-this-summer-fingers-crossed)
-		</Markdown>
+				[Keimig, Jasmyne. "The Rainier Valley Creative District Could Come This Summer (Fingers Crossed!)." *The Stranger*, 18 Feb. 2021, www.thestranger.com/slog/2021/02/18/55324536/the-rainier-valley-creative-district-is-coming-this-summer-fingers-crossed](https://www.thestranger.com/slog/2021/02/18/55324536/the-rainier-valley-creative-district-is-coming-this-summer-fingers-crossed)
+			</Markdown>
+		</section>
+		<section class="content sm:w-1/3 flex-none">
+			<h3>RVCD Newsletters</h3>
+			<script language="javascript" src="//gmail.us20.list-manage.com/generate-js/?u=92a78a27f4b4469acf40a8be4&fid=14752&show=10" type="text/javascript"></script>
+		</section>
 	</div>
 </MainLayout>
