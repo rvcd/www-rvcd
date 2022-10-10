@@ -23,7 +23,7 @@
 						<a href="/">
 							<span class="sr-only">Home</span>
 							<img 
-								class="h-12 w-auto"
+								class="h-12 w-auto hover:opacity-80 focus:scale-95"
 								width="96"
 								height="96" 
 								src="https://ik.imagekit.io/thegoldendino/rvcd/brand/logo-submark-2_o9JQAlsAv.png?updatedAt=1636004430482&tr=w-96,h-96" 
@@ -40,24 +40,24 @@
 						</button>
 					</div>
 					<nav class="hidden lg:flex space-x-10">
-						<a href="/community" class="tracking-widest text-lg font-base text-gray-700 hover:text-gray-900">
+						<a href="/community" class="tracking-widest text-lg font-base text-gray-700 hover:opacity-80 focus:scale-95">
 							COMMUNITY
 						</a>
-						<a href="/events" class="tracking-widest text-lg font-base text-gray-700 hover:text-gray-900">
+						<a href="/events" class="tracking-widest text-lg font-base text-gray-700 hover:opacity-80 focus:scale-95">
 							EVENTS	
 						</a>
-						<a href="/involved" class="tracking-widest text-lg font-base text-gray-700 hover:text-gray-900">
+						<a href="/involved" class="tracking-widest text-lg font-base text-gray-700 hover:opacity-80 focus:scale-95">
 							GET&nbsp;INVOLVED
 						</a>
-						<a href="/press" class="tracking-widest text-lg font-base text-gray-700 hover:text-gray-900">
+						<a href="/press" class="tracking-widest text-lg font-base text-gray-700 hover:opacity-80 focus:scale-95">
 							PRESS
 						</a>
-						<a href="/about" class="tracking-widest text-lg font-base text-gray-700 hover:text-gray-900">
+						<a href="/about" class="tracking-widest text-lg font-base text-gray-700 hover:opacity-80 focus:scale-95">
 							ABOUT
 						</a>
 					</nav>
 					<div class="hidden lg:flex items-center justify-end lg:flex-1 lg:w-0">
-						<a href="/donate" class="tracking-widest ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-lg font-base text-white bg-wine">
+						<a href="/donate" class="tracking-widest ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-lg font-base text-white bg-wine transition-opacity hover:opacity-80 focus:scale-95 ">
 							♥ DONATE 
 						</a>
 					</div>
