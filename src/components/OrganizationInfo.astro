@@ -1,0 +1,52 @@
+---
+import { Markdown } from 'astro/components';
+import Icon from './Icon.astro';
+import Image from './Image.astro';
+import community from '../data/community.json';
+
+const {commkey} = Astro.props;
+const org = community[commkey];
+---
+
+<div class="px-4 mt-10">
+	<h4 class="text-3xl text-cobalt opacity-80">{org.alt}</h4>
+		<Image
+			src={org.src}
+			width={org.width * 1.5}
+			height={org.height * 1.5}
+			alt={org.alt}
+			className="mt-4"
+			raw={true}
+		/>
+
+	<a href={org.href} class="underline text-2xl text-sky mt-3 block hover:opacity-80">{org.href}</a>
+
+	<div class="content mt-6">
+		<Markdown content={org.content.join("\n")}/>
+	</div>
+
+	<div class="flex volunteer mt-3 text-xl text-gray-600">
+		<div class="mr-2 font-bold">How To Volunteer:</div>
+		<Markdown content={org.how_to_volunteer} />
+	</div>
+
+	<div class="flex flex-wrap">
+		{Object.entries(org.media).map(([key, url]: [string, string]) => (
+			<a class="block my-4 mr-4 text-sky hover:opacity-80" href={url}>
+				<Icon key={key}/>
+			</a>
+		))}
+	</div>
+
+</div>
+
+<style>
+	.content ul {
+		@apply list-disc ml-5
+	}
+
+	.volunteer a {
+		@apply text-sky underline hover:opacity-80
+	}
+</style>
+

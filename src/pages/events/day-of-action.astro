@@ -1,0 +1,65 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import OrganizationInfo from "../../components/OrganizationInfo.astro";
+
+const participants = ["rvcd", "seyfs", "myrvla", "rbcoalition", "swps"];
+---
+<MainLayout infoKey="flying-heads" title="Day of Action" subtitle="Oct 15, 2022" heroImg="https://ik.imagekit.io/thegoldendino/rvcd/hero/hanging-heads_XTwLlID0v.jpg?updatedAt=1636006436488&tr=w-1024,f-jpg,pr-true" bg="bg-sky">
+	
+	<h2 class="text-gray-200 text-3xl bg-sky px-4 py-2 mb-2">
+		We Need Volunteers and Memberships to Support S.E. Seattle Organizations
+	</h2>
+
+	<div class="border-sky border-4 rounded-xl">
+		<div class="px-4 py-2 bg-sky rounded-xl border-2 border-gray-200">
+			<h2 class="text-gray-200 text-2xl py-2 flex">
+				<span class="text-gray-600 w-32 inline-block">Location:</span>
+				<span class="font-bold ">ADEFUA Center, <span class="text-xl text-gray-600">6716 Rainier Avenue South, Seattle, WA 98118.</span></span>
+				<div class="ml-4 border-b-2 border-gray-200/60">
+					<a href="https://goo.gl/maps/514N45KGh63QVb5v5" class="flex opacity-80 hover:opacity-100">
+						<span class="sr-only">Location Map</span>
+						<svg class="fill-current" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 24 24" width="30px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z"/></svg>
+						<p class="text-xl ml-1">map</p>
+					</a>
+					
+				</div>
+			</h2>
+			<h2 class="text-gray-200 text-2xl mb-2">
+				<span class="text-gray-600 w-32 inline-block">Time:</span>
+				<span class="font-bold">3 - 4pm. <span class="text-xl text-gray-600">(Come early for a Community Blessing at 2:30pm)</span></span>
+			</h2>	
+		</div>
+	</div>
+
+
+	<div class="content px-4 mt-10">
+		The Rainier Valley Creative District invites you to participate in our first annual convening of organizations and non-profits of the Rainier Valley.
+	</div>
+
+	<div class="content px-4 mt-2">
+		We are gathered to uplift and honor each other this fall as we hope to contribute to each of the organizations who are participating this year.	
+	</div>
+	
+	<div class="content px-4 mt-10">
+		<h3>What we ask of you:</h3>
+		<ol>
+			<li>1. To watch our presentations on the importance of volunteering and supporting your community.</li>
+			<li>2. Please read through the profiles of various organizations of the Rainier Valley.</li>
+			<li>3. Select one organization to volunteer for.</li>
+			<li>4. Like and follow the social media for the various organizations.</li>
+		</ol>
+	</div>
+
+	<hr class="my-10 border-mustard border-2"/>
+
+	<div class="px-4 flex justify-around flex-wrap">
+		<div class="w-full aspect-video md:w-1/3 bg-gray-600 flex justify-center items-center text-3xl text-gray-200">video</div>
+		<div class="w-full aspect-video md:w-1/3 bg-gray-600 flex justify-center items-center text-3xl text-gray-200">video</div>
+	</div>
+
+	{participants.map((commkey) => (
+		<hr class="my-10 border-mustard border-2"/>
+		<OrganizationInfo commkey={commkey}/> 
+	))}
+
+</MainLayout>

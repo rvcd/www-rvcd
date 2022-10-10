@@ -18,7 +18,25 @@
     "src": "https://ik.imagekit.io/thegoldendino/rvcd/community/swps_iTvFNK4Ls.jpg?updatedAt=1629866346316",
     "alt": "Seattle World Percussion Society",
     "width": "181",
-    "height": "128"
+    "height": "128",
+    "content": [
+      "Seattle World Percussion Society (SWPS) is a volunteer organization dedicated to the promotion, participation and appreciation of World Music, Drumming, & Dance in Seattle.",
+      "<br/><br/>",
+      "We do this through:",
+      "- Increased community access to music participation and learning resources",
+      "- Cultural exchange and awareness",
+      "- Arts education",
+      "<br/><br/>",
+      "**SWPS celebrates and supports** Seattle's vibrant web of world rhythm and dance teachers, performers and activities.  SWPS generates discovery and participation in these accessible arts by helping to link students to teachers and by sponsoring participatory rhythm and dance events.",
+      "<br/><br/>", 
+      "**Through experiencing** the infectious rhythms of Africa, Latin America, the Middle East, India, Asia, and Native America, people of all ages and cultures discover the pulse of creativity we share across all cultures."
+    ],
+    "how_to_volunteer": "Email SWPS at [swpsvolunteer@gmail.com](mailto:swpsvolunteer@gmail.com)",
+    "media": {
+      "facebook": "https://www.facebook.com/Seattle.World.Percussion.Society/",
+      "twitter": "https://twitter.com/world_seattle",
+      "youtube": "https://www.youtube.com/channel/UCYVGitY8l1KcNFg9md2Ic9g"
+    }
   },
   "wanawari": {
     "href": "https://www.wanawari.org/",
@@ -53,7 +71,23 @@
     "src": "https://ik.imagekit.io/thegoldendino/rvcd/community/rbac_-iVP_3Mk6j.png?updatedAt=1629866345797",
     "alt": "Rainier Beach Action Coalition",
     "width": "128",
-    "height": "128"
+    "height": "128",
+    "content": [
+      "**RAINIER BEACH ACTION COALITION (RBAC)** is a grassroot, Black-led organization devoted to locally driven development. For over ten years, it has promoted quality education, living wage jobs, affordable transportation and housing, and building community capacity in Seattle’s Rainier Beach neighborhood.",
+      "<br/><br/>",
+      "**RBAC MISSION**",
+      "- Implement the Rainier Beach Neighborhood Plan (1997, 2014) and build a connected, sustainable and equitable community within the Rainier Beach neighborhood.",
+      "- Promote the “made in Rainier Beach”, quality education, living wage jobs, affordable transportation and housing for all.",
+      "- Promote a safe place where people thrive, a neighborhood the world calls home.",
+      "- Build neighborhood capacity to enhance quality of life in Rainier Beach as well as to address critical issues threatening the welfare of Rainier Beach resident.",
+      "- RBAC ENGAGES WITH THE COMMUNITY THROUGH FOUR ACTION AREAS"
+    ],
+    "how_to_volunteer": "[Fill out RBAC’s volunteer form.](https://www.rbcoalition.org/volunteer/)",
+    "media": {
+      "facebook": "https://www.facebook.com/RainierBeachActionCoalition",
+      "twitter": "https://twitter.com/i/lists/55245377",
+      "youtube": "https://www.youtube.com/user/rbcoalition"
+    }
   },
   "kcskc": {
     "href": "https://www.kcskc.org/",
@@ -72,8 +106,77 @@
   "syso": {
     "href": "https://syso.org/",
     "src": "https://ik.imagekit.io/thegoldendino/rvcd/community/syso_Ybd2PamO3.png?updatedAt=1629866346250",
-    "alt": "https://ik.imagekit.io/thegoldendino/rvcd/community/syso_Ybd2PamO3.png?updatedAt=1629866346250",
+    "alt": "Seattle Youth Symphony Orchestra",
     "width": "86",
     "height": "100"
+  },
+  "rvcd": {
+    "href": "https://rainiervalleycreativedistrict.com/",
+    "src": "https://ik.imagekit.io/thegoldendino/rvcd/brand/logo-submark-2_o9JQAlsAv.png?updatedAt=1636004430482",
+    "alt": "Rainier Valley Creative District",
+    "width": "128",
+    "height": "128",
+    "content": [
+      "**The Mission of the Rainier Valley Creative District**",
+      "<br/>",
+      "To build out an active arts and culture coalition that advocates for the Rainier Valley’s artistic and cultural community by fostering collaboration, boosting collective visibility, and addressing economic inequity.",
+      "<br/><br/>",
+      "**Who is the Rainier Valley Creative District?**",
+      "<br/>",
+      "We are a coalition of cultural institutions, non-profits, community stakeholders, artists, musicians, businesses, and many others who have gotten together and envisioned a thriving Rainier Valley.",
+      "<br/><br/>",
+      "**What is a “Creative District” and what does this mean for the Rainier Valley?**",
+      "<br/>",
+      "Creative Districts are designated by the Washington State Arts Commission (ArtsWA). A Creative District is a geographically defined area of cultural and economic activity. It’s the heart of a community. It is a place for people to gather and enjoy their community’s arts and culture."
+    ],
+    "how_to_volunteer": "Visit our website and fill out our [volunteer engagement form](https://rainiervalleycreativedistrict.com/involved/).",
+    "media": {
+      "facebook": "https://www.facebook.com/Rainiervalleycreativedistrict",
+      "instagram": "https://www.instagram.com/rvcd.official/"
+    }
+  },
+  "seyfs": {
+    "href": "https://seyfs.org/",
+    "src": "https://ik.imagekit.io/thegoldendino/rvcd/community/seyouandfam_OhirnUrCE.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1665365419779",
+    "alt": "Southeast Youth & Family Services",
+    "width": "128",
+    "height": "128",
+    "content": [
+      "**Our mission is to assist children, youth and families in achieving safe, self-sufficient, and stable lives.**",
+      "<br/><br/>",
+      "**Founded in 1974 by leaders of the local Black community**, Southeast Youth and Family Services provides comprehensive early learning and mental health services that are based on the needs and strengths of the people who turn to us for help. We are a licensed mental health center and provide skilled, evidence-based, best-practice mental health treatment and prevention services.",
+      "<br/><br/>",
+      "**Through extensive outreach, we go to schools, homes, community centers, hospitals, juvenile detention, and other locations** to engage with youth and families and make our services accessible to those in greatest need. Our staff are advocates dedicated to helping youth and families overcome traumas caused by generational poverty, economic and educational inequality, disparities in foster care and the criminal justice system, and other forms of institutional racism.",
+      "<br/><br/>",
+      "**More than half of our clients are people of color; 95% are low-income.** We are based in in Southeast Seattle, one of the few areas of the city where non-white residents could rent or buy property during the era of real estate redlining. With gentrification and rising housing costs displacing many lower-income families, we are expanding our outreach and services to meet the needs of clients moving farther away from our historically diverse community."
+    ],
+    "how_to_volunteer": "Visit SYFS’s website and [fill out SYFS’s contact form.](https://seyfs.org/home/contact/)",
+    "media": {
+      "facebook": "https://www.facebook.com/SoutheastYFS"
+    }
+  },
+  "myrvla": {
+    "href": "https://www.myrvla.org/",
+    "src": "https://ik.imagekit.io/thegoldendino/rvcd/community/rvleadership_wNp8iazTM.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1665365419796",
+    "alt": "Rainier Valley Leadership Academy",
+    "width": "128",
+    "height": "128",
+    "content": [
+      "**Vision:** Rainier Valley Leadership Academy is an anti-racist collaborative community school focused on dismantling systemic oppression through scholar leadership.",
+      "<br/><br/>",
+      "**Mission:** We fulfill our vision by ensuring scholars are college and career ready by providing an anti-racist education, opportunities for collaborative problem solving, and community leadership experiences.",
+      "<br/><br/>",
+      "​Rainier Valley Leadership Academy is a public, tuition-free, charter school, providing an anti-racist collaborative community and rigorous education, while providing access to civic leadership and college success for all scholars in Seattle.",
+      "<br/><br/>",
+      "RVLA is a 6-12 public charter school serving the Seattle Community. We respect and celebrate the wealth and vitality of the ethnic and cultural traditions that thrive in our neighborhood. Our mission is to put every child on the path to success in college and career, leadership, and life.",
+      "<br/><br/>",
+      "We integrate college and career-ready and hands-on instruction to expose all scholars to a variety of authentic experiences. Our teachers use data driven collection to meet scholar needs and differentiation. We use common planning time and collaborative team time to analyze data to inform instruction. We provide a teacher mentor for every scholar, and focus on personalized learning."
+    ],
+    "how_to_volunteer": "[Fill out RVLA’s volunteer application](https://docs.google.com/forms/d/e/1FAIpQLSdSc3jk89NARG3kC4kDQ4x6Bh0QvFwkSHZTSrZcIUTRsimRpw/viewform)",
+    "media": {
+      "facebook": "https://www.facebook.com/RainierValleyLeadership",
+      "instagram": "https://www.instagram.com/p/CB_s-ZDpN43/",
+      "twitter": "https://twitter.com/rvlapride"
+    }
   }
 }

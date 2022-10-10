@@ -1,35 +1,48 @@
 [
   {
     "title": "Khmer New Year",
-    "when": "April"
+    "when": "April",
+    "url": "https://www.kcskc.org/"
   },
   {
     "title": "World Rhythm Festival Youth Fest",
-    "when": "April"
+    "when": "April",
+    "url": "https://www.swps.org/world-rhythm-festival"
   },
   {
     "title": "Beatwalk",
-    "when": "June to September"
+    "when": "June to September",
+    "url": "https://www.facebook.com/ColumbiaCityBeatwalk/"
   },
   {
     "title": "HONK! Fest West",
-    "when": "June"
+    "when": "June",
+    "url": "https://honkfestwest.org"
   },
   {
     "title": "SEEDArts Summer Series",
-    "when": "July to September"
+    "when": "July to September",
+    "url": "https://www.seedseattle.org/arts-culture/"
   },
   {
     "title": "World Rhythm Festival",
-    "when": "August"
+    "when": "August",
+    "url": "https://www.swps.org/world-rhythm-festival"
   },
   {
     "title": "Rainier Beach Back To School Event",
-    "when": "August"
+    "when": "August",
+    "url": "https://www.rbcoalition.org/category/signature-events/back2school-bash/"
+  },
+  {
+    "title": "RVCD Day of Action",
+    "when": "October",
+    "url": "/events/day-of-action"
   },
   {
     "title": "Odunde African Harvest Celebration",
-    "when": "November"
+    "when": "November",
+    "url": "https://www.adefuacenter.org/odunde-festival.html"
   },
   {
     "title": "Heritage Community Festival",

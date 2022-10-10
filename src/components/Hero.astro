@@ -1,17 +1,22 @@
 ---
 import InfoBtn from './InfoBtn.svelte';
 import info from '../data/info.json';
-const {title, img, bg, infoKey} = Astro.props;
+const {title, subtitle, img, bg, infoKey} = Astro.props;
 ---
 
 <div class={`container w-full min-w-full ${bg}`}>
 	<div class="stack h-inner">
 		<img class="object-cover object-center h-inner w-full" src={img} />
 		<div class="bg-gray-900 w-full bg-opacity-50"></div>
-		<div class="h-full flex justify-center items-center">
+		<div class="h-full flex justify-center items-center flex-col">
 			<h1 class="font-heading text-white text-5xl font-black w-full tracking-widest opacity-90 text-center uppercase leading-relaxed">
 				{title}
 			</h1>
+			{subtitle && (
+			<h1 class="font-heading text-white text-5xl font-black w-full tracking-widest opacity-90 text-center uppercase leading-relaxed">
+				{subtitle}
+			</h1>
+			)}
 		</div>
 
 		{infoKey && (
