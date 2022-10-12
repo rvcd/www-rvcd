@@ -25,20 +25,23 @@ const org = community[commkey];
 		<Markdown content={org.content.join("\n")}/>
 	</div>
 
-	<div class="flex flex-wrap volunteer mt-3 text-xl text-gray-600">
-		<div class="mr-2 font-bold">How To Volunteer:</div>
-		<Markdown content={org.how_to_volunteer} />
-	</div>
+	{org.how_to_volunteer && (
+		<div class="flex flex-wrap volunteer mt-3 text-xl text-gray-600">
+			<div class="mr-2 font-bold">How To Volunteer:</div>
+			<Markdown content={org.how_to_volunteer} />
+		</div>
+	)}
 
-	<div class="flex flex-wrap">
+	<div class="mt-3 flex flex-wrap items-center">
+		<div class="font-bold text-xl text-gray-600 mr-2">Social Media:</div>
 		{Object.entries(org.media).map(([key, url]: [string, string]) => (
 			<a class="block my-4 mr-4 text-sky hover:opacity-80" href={url}>
 				<Icon key={key}/>
 			</a>
 		))}
 	</div>
-
 </div>
+
 
 <style>
 	.content ul {
