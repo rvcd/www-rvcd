@@ -1,85 +1,120 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import InfoBtn from '../components/InfoBtn.svelte';
-import NewsletterSignup from '../components/NewsletterSignup.astro'
-import DayOfCultivation from '../components/DayOfCultivation.astro'
+import NewsletterSignup from '../components/NewsletterSignup.astro';
+import EventPromo from '../components/EventPromo.astro';
 import info from '../data/info.json';
 import goals from '../data/goals.json';
 
-const description = "Rainier Valley Creative District is an active arts and culture coalition that advocates for Rainier Valley’s artistic and cultural community by fostering collaboration, boosting collective visibility, and addressing economic inequity."
+const description =
+  'Rainier Valley Creative District is an active arts and culture coalition that advocates for Rainier Valley’s artistic and cultural community by fostering collaboration, boosting collective visibility, and addressing economic inequity.';
 ---
 
-<BaseLayout title="RVCD" titleSuffix=" - Unifying Communities of Rainier Valley through Arts and Culture" description={description} bg="bg-sky">
+<BaseLayout
+  title="RVCD"
+  titleSuffix=" - Unifying Communities of Rainier Valley through Arts and Culture"
+  description={description}
+  bg="bg-sky"
+>
   <div class="mt-1 min-w-full">
-  <div class="stack h-96 w-full  bg-white ">
-    <img 
-      class="object-cover object-right-top h-96 w-full"
-      width="1024"
-      alt="Kouyaté Arts West African Percussion and Dancers"
-      src="https://ik.imagekit.io/thegoldendino/rvcd/hero/dancers_XThkdtkZqyv.jpg?updatedAt=1636006417541&tr=w-1024,f-jpg,pr-true"/>
-    <div class="bg-gray-900 h-96 w-full bg-opacity-50"></div>
-    <div class="h-full flex flex-col lg:flex-row justify-center lg:justify-around items-center lg:items-top">
-      <img 
-        height="384" 
-        width="384" 
-			  class="rounded-full h-36 w-36 lg:w-96 lg:h-96 mx-20 relative lg:top-16 lg:block z-10 shadow-lg opacity-95" 
-        alt="Rainier Valley Creative District Logo"
-        src="https://ik.imagekit.io/thegoldendino/rvcd/brand/logo-lg_uqHNphXcj.png?updatedAt=1636003240128&tr=w-384,h-384" />
-      <h1 class="font-heading text-white text-2xl sm:text-4xl xl:text-5xl font-base w-4/5 lg:w-full ml-auto mr-auto lg:mr-20 lg:ml-0 mt-5 lg:mt-5 xl:mt-10 leading-relaxed sm:leading-relaxed xl:leading-relaxed tracking-widest opacity-90 text-center lg:text-right">
-        Unifying Communities of Rainier Valley through 
-        Arts and Culture
-      </h1>
+    <div class="stack h-96 w-full bg-white">
+      <img
+        class="object-cover object-right-top h-96 w-full"
+        width="1024"
+        alt="Kouyaté Arts West African Percussion and Dancers"
+        src="https://ik.imagekit.io/thegoldendino/rvcd/hero/dancers_XThkdtkZqyv.jpg?updatedAt=1636006417541&tr=w-1024,f-jpg,pr-true"
+      />
+      <div class="bg-gray-900 h-96 w-full bg-opacity-50"></div>
+      <div
+        class="h-full flex flex-col lg:flex-row justify-center lg:justify-around items-center lg:items-top"
+      >
+        <img
+          height="384"
+          width="384"
+          class="rounded-full h-36 w-36 lg:w-96 lg:h-96 mx-20 relative lg:top-16 lg:block z-10 shadow-lg opacity-95"
+          alt="Rainier Valley Creative District Logo"
+          src="https://ik.imagekit.io/thegoldendino/rvcd/brand/logo-lg_uqHNphXcj.png?updatedAt=1636003240128&tr=w-384,h-384"
+        />
+        <h1
+          class="font-heading text-white text-2xl sm:text-4xl xl:text-5xl font-base w-4/5 lg:w-full ml-auto mr-auto lg:mr-20 lg:ml-0 mt-5 lg:mt-5 xl:mt-10 leading-relaxed sm:leading-relaxed xl:leading-relaxed tracking-widest opacity-90 text-center lg:text-right"
+        >
+          Unifying Communities of Rainier Valley through Arts and Culture
+        </h1>
+      </div>
+      <div class="place-self-end self-end mb-5 mr-5">
+        <InfoBtn client:idle info={info['dancers']} />
+      </div>
     </div>
-    <div class="place-self-end self-end mb-5 mr-5">
-      <InfoBtn client:idle info={info["dancers"]} />
-    </div>
-  </div>
 
-  <div class="mt-0 stack w-full h-full">
-    <div class="wave-clip bg-gray-800 w-full opacity-20 h-1/4 sm:h-1/3 lg:h-full"></div>
-    <div class="mx-auto pt-10 lg:pt-24 pb-10 px-6 max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-6 z-10">
-      <div class="w-full  text-white">
-        <h2 class="font-secondary text-3xl text-center">Your Creative District will</h2>
-        <div class="gradient-line mt-3 mb-4"></div>
-        <ul class="text-2xl mx-6">
-          {goals.map((goal) => (
-            <li class="flex items-top mb-2"><svg class="inline-block mr-3 h-7 w-3 flex-none fill-current" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"/></svg>{goal}</li>
-          ))}
-        </ul>
+    <div class="mt-0 stack w-full h-full">
+      <div
+        class="wave-clip bg-gray-800 w-full opacity-20 h-1/4 sm:h-1/3 lg:h-full"
+      >
       </div>
-      <div >
-        <div class="gradient-line mb-10 block lg:hidden"></div>
-        <DayOfCultivation/>
-        <img 
-          class="h-auto mx-auto w-full max-w-sm rounded-xl  border-4 border-white"
-          width="376"
-          height="462" 
-          src="https://ik.imagekit.io/thegoldendino/rvcd/brand/map_9-VJ8ATTB.png?updatedAt=1636003240081&tr=w-376,h-462,f-jpg,pr-true"
-          alt="Map"/>
-        <NewsletterSignup/>
+      <div
+        class="mx-auto pt-10 lg:pt-24 pb-10 px-6 max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-6 z-10"
+      >
+        <div class="w-full text-white">
+          <h2 class="font-secondary text-3xl text-center">
+            Your Creative District will
+          </h2>
+          <div class="gradient-line mt-3 mb-4"></div>
+          <ul class="text-2xl mx-6">
+            {
+              goals.map((goal) => (
+                <li class="flex items-top mb-2">
+                  <svg
+                    class="inline-block mr-3 h-7 w-3 flex-none fill-current"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    width="24px"
+                    fill="#000000"
+                  >
+                    <>
+                      <path d="M0 0h24v24H0z" fill="none" />
+                      <path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z" />
+                    </>
+                  </svg>
+                  {goal}
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+        <div>
+          <div class="gradient-line mb-10 block lg:hidden"></div>
+          <EventPromo />
+          <img
+            class="h-auto mx-auto w-full max-w-sm rounded-xl border-4 border-white"
+            width="376"
+            height="462"
+            src="https://ik.imagekit.io/thegoldendino/rvcd/brand/map_9-VJ8ATTB.png?updatedAt=1636003240081&tr=w-376,h-462,f-jpg,pr-true"
+            alt="Map"
+          />
+          <NewsletterSignup />
+        </div>
       </div>
     </div>
-  </div>
   </div>
 </BaseLayout>
 
 <style>
-	h1 {
-		animation-duration: 0.3s;
+  h1 {
+    animation-duration: 0.3s;
     animation-timing-function: ease-out;
-		animation-name: fadein;
+    animation-name: fadein;
+  }
 
-	}
+  @keyframes fadein {
+    from {
+      opacity: 0%;
+      transform: translate(2%);
+    }
 
-	@keyframes fadein {
-		from {
-			opacity: 0%;
-			transform: translate(2%)
-		}
-
-		to {
-			opacity: 70%;
-			transform: translate(0)
-		}
-	}
+    to {
+      opacity: 70%;
+      transform: translate(0);
+    }
+  }
 </style>
