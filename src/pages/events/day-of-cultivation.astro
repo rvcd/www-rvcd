@@ -1,8 +1,5 @@
 ---
 import MainLayout from "../../layouts/MainLayout.astro";
-import OrganizationInfo from "../../components/OrganizationInfo.astro";
-import Image from "../../components/RemoteImage.astro";
-
 const participants = ["rvcd", "adefua", "seyfs", "myrvla", "rbcoalition", "swps"];
 ---
 <MainLayout infoKey="seattle" title="Day of Cultivation" heroImg="https://ik.imagekit.io/thegoldendino/rvcd/hero/seattle_e7GvcLR9k.JPG?updatedAt=1636175567171&tr=w-1024,f-jpg,pr-true" bg="bg-sky">
@@ -109,7 +106,6 @@ const participants = ["rvcd", "adefua", "seyfs", "myrvla", "rbcoalition", "swps"
 
 	{participants.map((commkey) => (
 		<hr class="my-10 border-mustard border-2"/>
-		<OrganizationInfo commkey={commkey}/> 
 	))}
 
 </MainLayout>
