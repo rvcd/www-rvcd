@@ -1,6 +1,6 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
-import Image from '../components/Image.astro';
+import Image from '../components/RemoteImage.astro';
 
 import community from '../data/community.json'
 ---
@@ -14,7 +14,7 @@ import community from '../data/community.json'
 	<div class="flex flex-wrap justify-evenly">
 
 		{Object.values(community).map((member: {href: string, src: string, width: string, height: string, alt: string}) => (
-			<div class="wrapper">
+			<div class="rounded-md border-folage border-4 p-2 bg-white m-2 flex items-center">
 				<a href={member.href}>
 					<Image
 						src={member.src}
@@ -30,9 +30,3 @@ import community from '../data/community.json'
 
 	</div>
 </MainLayout>
-
-<style>
-	.wrapper {
-		@apply rounded border-folage border-4 p-2 bg-white m-2 flex items-center	
-	}
-</style>

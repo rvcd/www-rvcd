@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 @font-face {
   font-family: 'Glacial Indifference';
@@ -14,6 +12,15 @@
 @font-face {
   font-family: 'Prata';
   src: url('/assets/fonts/Prata-Regular.ttf') format('truetype');
+}
+
+@theme {
+  --color-gray: --color-neutral-500;
+  --color-wine: #941926;
+  --color-cobalt: #223e4c;
+  --color-folage: #559c3b;
+  --color-sky: #56a5b9;
+  --color-mustard: #d7972a;
 }
 
 body,
