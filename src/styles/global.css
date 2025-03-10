@@ -21,6 +21,8 @@
   --color-folage: #559c3b;
   --color-sky: #56a5b9;
   --color-mustard: #d7972a;
+  --font-heading: 'Prata', serif;
+  --font-secondary: 'Glacial Indifference', sans-serif;
 }
 
 body,
