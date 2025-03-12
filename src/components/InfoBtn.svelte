@@ -14,7 +14,7 @@
 </button>
 
 {#if isOpen}
-	<div class="fixed top-0 left-0 w-full h-screen bg-gray-900 bg-opacity-90 z-40" transition:fade="{{duration: 100}}">
+	<div class="fixed top-0 left-0 w-full h-screen bg-gray-900/90 z-40" transition:fade="{{duration: 100}}">
 		<div class="stack h-full">
 			<img src={image_url} class="hidden sm:block sm:h-full w-full place-self-center self-center object-contain max-w-6xl" alt={title}/>
 			<button on:click={() => isOpen = false} class="place-self-end opacity-50 hover:opacity-80 focus:scale-90 absolute top-5 right-5">
