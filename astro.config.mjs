@@ -5,8 +5,7 @@ import svelte from '@astrojs/svelte';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://rvcd.github.io',
-  base: '/www-rvcd',
+  site: 'https://rainiervalleycreativedistrict.com',
   vite: {
     plugins: [tailwindcss()]
   },
