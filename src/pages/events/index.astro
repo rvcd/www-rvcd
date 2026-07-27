@@ -1,32 +1,48 @@
 ---
-import MainLayout from '../../layouts/MainLayout.astro';
-import EventItem from '../../components/EventItem.astro';
+import MainLayout from "../../layouts/MainLayout.astro";
+import EventItem from "../../components/EventItem.astro";
 
-import upcomingEvents from '../../data/upcoming-events.json';
-import signatureEvents from '../../data/signature-events.json';
+import signatureEvents from "../../data/signature-events.json";
 ---
 
 <MainLayout
-	infoKey="flying-heads"
-	title="Events"
-	heroImg="https://ik.imagekit.io/thegoldendino/rvcd/hero/hanging-heads_XTwLlID0v.jpg?updatedAt=1636006436488&tr=w-1024,f-jpg,pr-true"
-	bg="bg-sky"
+    infoKey="flying-heads"
+    title="Events"
+    heroImg="https://ik.imagekit.io/thegoldendino/rvcd/hero/hanging-heads_XTwLlID0v.jpg?updatedAt=1636006436488&tr=w-1024,f-jpg,pr-true"
+    bg="bg-sky"
 >
-	<div class="grid grid-cols-1 gap-10 w-full">
-		<!-- Upcomming EVENTS -->
-		<!-- <div class="flex flex-col items-center h-full">
-			<h3 class="text-gray-200 block text-3xl bg-sky px-4 py-2 mb-2">
-				Upcoming Events
-			</h3>
-			{upcomingEvents.map((event) => <EventItem event={event} />)}
-		</div> -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 w-full">
+        <!-- Calendar + Community Form -->
+        <div class="flex flex-col items-center h-full">
+            <h3 class="text-gray-200 block text-3xl bg-sky px-4 py-2 mb-2">
+                Calendar
+            </h3>
+            <div class="w-full max-w-[800px] aspect-[4/3] mb-6">
+                <iframe
+                    src="https://calendar.google.com/calendar/embed?src=8f03c099ea62b4dcb21ddf113e1de125f4f4a1ead90f011170b998cbb3cf2995%40group.calendar.google.com&ctz=America%2FLos_Angeles"
+                    style="border: 0"
+                    class="w-full h-full"
+                    frameborder="0"
+                    scrolling="no"
+                    title="RVCD Community Calendar"></iframe>
+            </div>
+            <a
+                class="text-center block text-gray-200 rounded-xl py-2 px-4 bg-sky hover:opacity-80 focus:scale-95"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdPWj5SC4wQY3nv9pw16pfCs0kdrMLb2KNgLbUGdtjI1enfOA/viewform?usp=dialog"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <span class="block text-2xl font-semibold">Submit an Event</span
+                >
+            </a>
+        </div>
 
-		<!-- Signature EVENTS -->
-		<div class="flex flex-col justify-between items-center h-full">
-			<h3 class="text-gray-200 block text-3xl bg-sky px-4 py-2 mb-2">
-				Signature Events
-			</h3>
-			{signatureEvents.map((event) => <EventItem event={event} />)}
-		</div>
-	</div>
+        <!-- Signature EVENTS -->
+        <div class="flex flex-col justify-between items-center h-full">
+            <h3 class="text-gray-200 block text-3xl bg-sky px-4 py-2 mb-2">
+                Signature Events
+            </h3>
+            {signatureEvents.map((event) => <EventItem event={event} />)}
+        </div>
+    </div>
 </MainLayout>
