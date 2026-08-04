@@ -19,3 +19,6 @@ yarn-error.log*
 
 # netlify build output
 .netlify
+
+# astro build cache
+.astro
